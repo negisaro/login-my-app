@@ -1,5 +1,6 @@
 import { Component, computed, effect, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { Tooltip, initTWE } from 'tw-elements';
 import { AuthStatus } from './auth/interfaces';
 import { AuthService } from './auth/services/auth.service';
 
@@ -9,6 +10,11 @@ import { AuthService } from './auth/services/auth.service';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  
+  ngOnInit() {
+    initTWE({ Tooltip });
+  }
+
   private authService = inject(AuthService);
   private router = inject(Router);
 

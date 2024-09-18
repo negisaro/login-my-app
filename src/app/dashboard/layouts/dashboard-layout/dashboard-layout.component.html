@@ -1,13 +1,29 @@
-<h1>Dashboard</h1>
-<hr>
-
-<h3>User</h3>
-<pre>{{ user() | json }}</pre>
 
 
-<br>
-<!-- <span routerLink="/auth/login">Ir a login</span> -->
+<div class="row">
+  <div class="col-*-*">
+    <shared-navbar placeholder="buscar..."></shared-navbar>
+  </div>
 
-<button (click)="onLogout()">
-  Cerrar Sesión
-</button>
+  <div class="col-2">
+    <shared-sidebar></shared-sidebar>
+  </div>
+
+  <div class="col-8">
+    <h3>User</h3>
+    <pre>{{ user() | json }}</pre>
+    <button (click)="onLogout()">
+      Cerrar Sesión
+      <router-outlet></router-outlet>
+    </button>
+  </div>
+
+  <div class="col">
+   <!--  <shared-sidebar></shared-sidebar> -->
+  </div>
+
+  <div class="col-*-*">
+    <shared-footer></shared-footer>
+  </div>
+
+</div>

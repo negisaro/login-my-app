@@ -1,0 +1,39 @@
+<nav class="w-full bg-neutral-800 .dark:bg-neutral-900 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+  <div class="flex w-full flex-wrap items-center justify-between px-3 ">
+    <ul
+      class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-dark-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+      id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+      <li class="me-2">
+        <button id="home-tab" data-tabs-target="" type="button" role="tab" aria-controls="home" aria-selected="true"
+          routerLink="" class="inline-block p-4 text-cyan-800 rounded-ss-lg hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+          focus:bg-cyan-accent-800 focus:shadow-primary-2 focus:outline-none focus:ring-0">Inicio</button>
+      </li>
+      <li class="me-2">
+        <button id="about-tab" data-tabs-target="about" type="button" role="tab" aria-controls="about"
+          routerLink="about" aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">About</button>
+      </li>
+      <li class="me-2">
+        <button id="services-tab" data-tabs-target="" type="button" role="tab" aria-controls="services"
+          aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Services</button>
+      </li>
+      <li class="me-2">
+        <button id="statistics-tab" data-tabs-target="" type="button" role="tab" aria-controls="statistics"
+          aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Facts</button>
+      </li>
+    </ul>
+    <div class="ms-5 flex w-[30%] items-center justify-between">
+      <input type="search"
+        class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+        placeholder="Buscar" aria-label="Search" aria-describedby="button-addon2" />
+
+      <button
+        class="relative z-[2] rounded-e border-2 border-primary px-6 pb-[6px] pt-2 m-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 motion-reduce:transition-none dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+        type="button" id="button-addon3" data-twe-ripple-init>
+        Buscar
+      </button>
+    </div>
+  </div>
+</nav>

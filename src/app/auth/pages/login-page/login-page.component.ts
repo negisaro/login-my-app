@@ -17,14 +17,14 @@ export class LoginPageComponent {
 
 
   public myForm: FormGroup = this.fb.group({
-    username:    ['', [ Validators.required ]],
-    password: ['', [ Validators.required, Validators.minLength(6) ]],
+    username:    ['nesalaz', [ Validators.required ]],
+    password: ['Nesalaz123', [ Validators.required, Validators.minLength(6) ]],
   });
 
 
   login() {
     const { username, password } = this.myForm.value;
-    console.log(this.myForm.value)
+
     this.authService.login(username, password)
       .subscribe({
         next: () => this.router.navigateByUrl('/dashboard'),
