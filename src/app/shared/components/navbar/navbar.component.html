@@ -1,22 +1,24 @@
-<nav class="w-full bg-neutral-800 .dark:bg-neutral-900 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<nav class="w-full bg-gray-800 .dark:bg-neutral-900">
   <div class="flex w-full flex-wrap items-center justify-between px-3 ">
     <ul
       class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-dark-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
       id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
       <li class="me-2">
         <button id="home-tab" data-tabs-target="" type="button" role="tab" aria-controls="home" aria-selected="true"
-          routerLink="" class="inline-block p-4 text-cyan-800 rounded-ss-lg hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
+          routerLink="/dashboard" class="inline-block p-4 text-cyan-100 rounded-ss-lg hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700
           focus:bg-cyan-accent-800 focus:shadow-primary-2 focus:outline-none focus:ring-0">Inicio</button>
       </li>
       <li class="me-2">
-        <button id="about-tab" data-tabs-target="about" type="button" role="tab" aria-controls="about"
-          routerLink="about" aria-selected="true"
-          class="inline-block p-4 text-cyan-800 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">About</button>
+        <button id="add-product-tab" data-tabs-target="add-product" type="button" role="tab" aria-controls="add-product"
+          routerLink="product/add-product" aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">Agregar
+          Producto</button>
       </li>
       <li class="me-2">
-        <button id="services-tab" data-tabs-target="" type="button" role="tab" aria-controls="services"
-          aria-selected="true"
-          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Services</button>
+        <button routerLink="product/list-product" id="services-tab" data-tabs-target="" type="button" role="tab"
+          aria-controls="services" aria-selected="true"
+          class="inline-block p-4 text-cyan-800 hover:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-700 dark:hover:text-gray-300">Listado
+          de Productos</button>
       </li>
       <li class="me-2">
         <button id="statistics-tab" data-tabs-target="" type="button" role="tab" aria-controls="statistics"

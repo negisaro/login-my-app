@@ -16,4 +16,9 @@ export class SidebarComponent {
     this.authService.logout();
   }
 
+  public sidebarItems = [
+    { label: 'Listado Productos', icon: 'label', url: '/list-product' },
+    { label: 'Añadir Productos', icon: 'add', url: './add-product' },
+  ];
+
 }
